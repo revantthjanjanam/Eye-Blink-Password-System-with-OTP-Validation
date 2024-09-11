@@ -1,32 +1,4 @@
 
-```markdown
-# Eye Blink Password Detection System
-
-This project is an Eye Blink Password Detection System that uses a webcam to detect eye blinks and allows a user to unlock the system using a predefined blink sequence. The system captures and verifies an eye blink pattern (like 'LRBB' for Left eye closed, Right eye closed, Both eyes closed) and sends an OTP (One-Time Password) via email for final validation before granting access.
-
-## Features
-
-- Real-time detection of left and right eye blinks using Haar Cascade Classifiers.
-- Blink sequence detection to match the predefined password.
-- Email alert with an OTP and a photo attachment of the person trying to access the system.
-- System lock after multiple failed OTP attempts.
-
-## Dependencies
-
-Before running the project, ensure you have installed the following libraries:
-
-- [OpenCV](https://pypi.org/project/opencv-python/) (`cv2`)
-- [Numpy](https://pypi.org/project/numpy/) (`numpy`)
-- [Imutils](https://pypi.org/project/imutils/) (for easier video stream management)
-- [smtplib](https://docs.python.org/3/library/smtplib.html) (for sending emails)
-- [SSL](https://docs.python.org/3/library/ssl.html) (for secure email transmission)
-
-You can install the required dependencies by running:
-
-```bash
-pip install opencv-python numpy imutils
-```
-
 ## How It Works
 
 1. **Eye Detection**: 
@@ -94,7 +66,3 @@ pip install opencv-python numpy imutils
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-
-This README provides a clear overview of the project, how it works, the setup process, and the usage instructions. You can modify it further based on your specific needs or enhancements.
